@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    background-color: pink;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-top: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    background: linear-gradient(to right, red, darkred);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+button:hover {
+    transform: scale(1.1);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.love, .rose {
+    position: absolute;
+    font-size: 2em;
+    animation: fall 5s linear infinite;
+}
+@keyframes fall {
+    from { transform: translateY(-100px); opacity: 1; }
+    to { transform: translateY(100vh); opacity: 0; }
+}
+#specialMessage {
+    display: none;
+    font-size: 1.5em;
+    color: white;
+    background: red;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    animation: fadeIn 2s;
+}
